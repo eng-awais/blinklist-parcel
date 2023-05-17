@@ -1,0 +1,16 @@
+{
+  "name": "test-project-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nanoid": "^4.0.2",
+    "parcel": "^2.8.3"
+  }
+}
