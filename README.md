@@ -1,4 +1,4 @@
-# A/B testing
+# Blinklist-parcel A/B testing
 
 # How to setup
 
@@ -10,6 +10,7 @@
 
 - Node LTS version
 - parcel (you can install it globally by command `npm i -g parcel` or it can be installed as dev dependency)
+- install nanoid using `npm i nanoid`
 
 # Description
 
@@ -33,13 +34,14 @@
 
 `CTR = number of unique impressions / number of signup events`
 
-#Brief explanation about all the key points
+
+# Brief explanation about all the key points
 
 **_Thought process_**:
 
 - Examined the specifications, presumptions, and provided files.
 - develop a mechanism for offering variations to visitors.
-- Render variation - Unique visitor storing strategy.
+- Render variation (Unique visitor storing strategy).
 
 **_Assumptions and Rationable behind decisions_**
 
@@ -48,12 +50,12 @@
 
 **_Tradeoffs, Problems, and Limitations_**
 
-- Managing and maintaining the A/B testing logic within the frontend coding can be challenging as in case user clear localstorage or cleans cache, its id and variation record will vainsh out.
-- When compared to employing specialised A/B testing tools, doing statistical analysis to ascertain the statistical significance of test findings may be more difficult when using frontend-only A/B testing.
+- Managing and maintaining the A/B testing logic within the frontend coding can be challenging as in case user clear local-storage or cleans cache, its id and variation record will vainsh out.
+- When compared to employing specialized A/B testing tools, doing statistical analysis to ascertain the statistical significance of test findings may be more difficult when using frontend-only A/B testing.
 - Without a server-side component, tracking across several devices might be difficult for same user as another browser or device can lead same user to another variation.
-- A/B testing may only be applicable to a single page or article, and expanding the testing across several pages or application flows may not present the wanted results                                                                                                                                .
+- A/B testing may only be applicable to a single page or article, and expanding the testing across several pages or application flows may not present the wanted results.                                                                               
 
 **_Ideas for improvements_**
 
 - Take into account including additional capabilities like multivariate testing or segmenting visitors based on user attributes or behaviours. These features can enhance the testing process and offer deeper insights into user behaviour.
-# blinklist-parcel
+- Offer same user with different variation after sometime like (if he visitors after 2-3 days) can bring better results based on their multivariation experience.
