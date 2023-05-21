@@ -1,18 +1,23 @@
 # Blinklist-parcel A/B testing
 
-# How to setup
+## How to setup
 
 - unzip the file
 - install necessary packages by running command `npm install`
 - To start app, use command: `npx parcel index.html`
 
-# Depdencies
+## Depdencies
 
 - Node LTS version
 - parcel (you can install it globally by command `npm i -g parcel` or it can be installed as dev dependency)
 - install nanoid using `npm i nanoid`
 
-# Description
+## Server Info
+
+- This application is deployed on Netlify
+- This is the link where you can access the app https://6469ce848d6d8d496c015f29--tiny-pie-aef77c.netlify.app/
+
+## Description
 
 - There are two variations of content for now but can be added as much needed e.g. ["Control", "Test"]
 
@@ -24,7 +29,7 @@
 
 - In case, visitor Id and article Id exist in localstorage, article id is fetched and same article is rendered to user.
 
--Variation can be consistent for the user even many times they come.
+- Variation can be consistent for the user even many times they come.
 
 - **assignVariation** function is helping us to calculate the variation and, then **renderVariation** function is used to render the article.
 
@@ -35,7 +40,7 @@
 `CTR = number of unique impressions / number of signup events`
 
 
-# Brief explanation about all the key points
+## Brief explanation about all the key points
 
 **_Thought process_**:
 
@@ -53,7 +58,7 @@
 - Managing and maintaining the A/B testing logic within the frontend coding can be challenging as in case user clear local-storage or cleans cache, its id and variation record will vainsh out.
 - When compared to employing specialized A/B testing tools, doing statistical analysis to ascertain the statistical significance of test findings may be more difficult when using frontend-only A/B testing.
 - Without a server-side component, tracking across several devices might be difficult for same user as another browser or device can lead same user to another variation.
-- A/B testing may only be applicable to a single page or article, and expanding the testing across several pages or application flows may not present the wanted results.                                                                               
+- A/B testing may only be applicable to a single page or article, and expanding the testing across several pages or application flows may not present the wanted results.
 
 **_Ideas for improvements_**
 
